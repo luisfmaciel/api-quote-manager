@@ -22,6 +22,7 @@ public class Produto {
 	private String descricao;
 	private String departamento; 
 	private Integer quantidade;
+	private String image;
 	@OneToMany(cascade=CascadeType.REMOVE, orphanRemoval = true)
 	@JoinColumn(name="produtoId")
 	private List<Cotacao> cotacoes;
