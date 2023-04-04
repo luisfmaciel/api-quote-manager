@@ -51,7 +51,8 @@ public class ProdutoController {
 		p.setDescricao(produto.get("descricao"));
 		p.setDepartamento(produto.get("departamento"));
 		p.setQuantidade(Integer.parseInt(produto.get("quantidade")));
-
+		p.setImageUrl(produto.get("imageUrl"));
+		
 		List<Cotacao> cotacoes = new ArrayList<Cotacao>();
 		if(cotacaoId != null) {
 			for (String quote : cotacaoId.split(",")) {
